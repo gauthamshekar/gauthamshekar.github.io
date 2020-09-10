@@ -9,8 +9,7 @@
 	<a href="#" class="logo">Gautham's Brain</a>
 	<ul>
     <li><a href="C:\Users\Home\Desktop\website\index.html">Home</a></li>
-	<li><a href='#' >Login</a></li>
-	<li><a href="#">Register</a></li>
+	<li><a href='contribute.html' >Contribute</a></li>
 	</ul>
 </header>
 <div class="sidenav">
@@ -58,6 +57,29 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+</script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDJv77HRMD6maymrdOLKyvzgohSDCwf0LU",
+    authDomain: "gautham-sbrain.firebaseapp.com",
+    databaseURL: "https://gautham-sbrain.firebaseio.com",
+    projectId: "gautham-sbrain",
+    storageBucket: "gautham-sbrain.appspot.com",
+    messagingSenderId: "79526263747",
+    appId: "1:79526263747:web:881032869642ca60169b76",
+    measurementId: "G-9Z3QL5D3P0"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
 </script>
 </body>
 </html>
