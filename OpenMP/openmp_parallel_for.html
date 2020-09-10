@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gautham's Brain</title>
+	<link rel="stylesheet" type="text/css" href="openmp_parallel_for.css">
+</head>
+<body>
+<header>
+	<a href="#" class="logo">Gautham's Brain</a>
+	<ul>
+    <li><a href="C:\Users\Home\Desktop\website\index.html">Home</a></li>
+	<li><a href='#' >Login</a></li>
+	<li><a href="#">Register</a></li>
+	</ul>
+</header>
+<div class="sidenav">
+<button class="accordion">OpenMP</button>
+<div class="panel">
+  <ul>
+  	<li><a href='#'>Parallel for</a></li>
+  	<li><a href='#'>Last Private</a></li>
+  	<li><a href='#'>First Private</a></li>
+  	<li><a href='#'>Reduction</a></li>
+  </ul>
+  </div>
+<button class="accordion">C programming</button>
+</div>
+
+<div class="main-box1">
+  <h1><a href='#'>OpenMP Hello World</a></h1>
+  <h2>Last Updated: 12-08-2020</h2>
+  <p>OpenMP is an architecture to perform parallel operation in the C, C++ and Fortran programming. It mainly depends on the cores and threads. If your system has two core then you will have four threads. If you dont know what is core and thread then go to this link <a href='#'>Splash on Multicore</a> you will understand the basics of the core and threads. The main hello world program is to find the number of threads present in the particular system. You have to use <i>omp_get_num_threads()</i>and print the value using printf. So lets code..</p>
+  <h3>Output:</h3>
+  <div class="bottom-part">
+    <p> So you can see that my execution gives me 4 thread because I have two core system. You can try on your own but you can get different answer like 2 threads or 6 threads and some times 8 threads depends upon your system. Actually this <i>omp_get_thread_num()</i> is fetching the number of threads from your system and printing with the help of the <i>#pragma omp parallel</i>. So these two are governed by the library named <b>omp.h</b>. So this will be the hello world program for OpenMP if you wanto learn more on OpenMP then click for the next course at the bottom.</p>
+    <h4>Happy Learning!!!</h4>
+  </div>
+  <div class="contributor">
+    <h4>Contributors: </h4>
+    <img src="gautham.jpeg">
+  </div>
+  <div class="next">
+    <a href="#">OpenMP Parallel for>>></a>
+  </div>
+</div>
+<div class="code-box">
+  <h2>#include stdio.h</h2>
+  <h2>#include omp.h</h2>
+  <h2>int main()</h2>
+  <h2>{</h2>
+  <h2>#pragma omp parallel</h2>
+  <h2>{</h2>
+  <h2>printf("Hello World from thread = %d\n", omp_get_thread_num());</h2>
+  <h2>}</h2>
+  <h2>return 0;</h2>
+  <h2>}</h2>
+  </div>
+<div class="output-box">
+  <h2>Hello World from thread = 4</h2>
+</div>
+<footer>Copyright</footer>
+<script type="text/javascript">
+	window.addEventListener("scroll", function(){
+		var header = document.querySelector("header");
+		header.classList.toggle("sticky", window.scrollY > 0); 
+	})
+</script>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>
