@@ -84,5 +84,8 @@ a.nav-link.nav3{
 	.nav-item{
 		display: none;
 	}
+	.navbar-toggler{
+		display: none;
+	}
 
 }
