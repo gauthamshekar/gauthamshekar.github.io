@@ -79,7 +79,7 @@ a.nav-link.nav3{
 	margin-right: 30px;
 }
 
-@media(min-width: 990px) and (max-width: 1600px)
+@media(min-width: 769px) and (max-width: 1600px)
 {
 	.nav-item{
 		display: none;
